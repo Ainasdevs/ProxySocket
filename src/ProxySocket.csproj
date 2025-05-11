@@ -1,26 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup Label="Build">
-    <TargetFrameworks>netstandard2.0;net40</TargetFrameworks>
-    <OutputType>Library</OutputType>
-    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
-    <AssemblyOriginatorKeyFile>Signature.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
-    
-  <PropertyGroup Label="NuGet">
-    <Version>1.1.2</Version>
-    <Authors>Poma</Authors>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/poma/ProxySocket</PackageProjectUrl>
-    <Description>- ProxySocket is an implementation of the SOCKS4/SOCKS5/HTTPS CONNECT protocol
-- Supports username/password authentication
-- Inherits from a standard Socket class</Description>
-    <PackageReleaseNotes>Added xml documentation</PackageReleaseNotes>
-    <Copyright>Copyright 2016</Copyright>
-    <PackageTags>ProxySocket Socks Socks4 Socks5 https socket proxy</PackageTags>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-  </PropertyGroup>
+    <PropertyGroup Label="Build">
+        <TargetFrameworks>netstandard2.0;net40</TargetFrameworks>
+        <OutputType>Library</OutputType>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <AssemblyOriginatorKeyFile>Signature.snk</AssemblyOriginatorKeyFile>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <None Include="../LICENSE" Pack="true" PackagePath=""/>
-  </ItemGroup>
+    <PropertyGroup Label="NuGet">
+        <PackageId>Ainasdevs.ProxySocket</PackageId>
+        <Version>1.1.2</Version>
+        <Authors>Ainas</Authors>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+        <PackageProjectUrl>https://github.com/ainasdevs/ProxySocket</PackageProjectUrl>
+        <Description>- ProxySocket is an implementation of the SOCKS4/SOCKS5/HTTPS CONNECT protocol
+            - Supports username/password authentication
+            - Inherits from a standard Socket class
+        </Description>
+        <PackageReleaseNotes>Added xml documentation</PackageReleaseNotes>
+        <Copyright>Copyright 2016</Copyright>
+        <PackageTags>ProxySocket Socks Socks4 Socks5 https socket proxy</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../LICENSE" Pack="true" PackagePath=""/>
+    </ItemGroup>
 </Project>
